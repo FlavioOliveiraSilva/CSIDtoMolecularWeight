@@ -9,7 +9,7 @@ import lxml.html
 import requests
 
 
-
+#List of CSID numbers
 CSIDList = ['7219','6967','388322','71358','96840','23107144','93564','15634','70104','13835351','11043','13837988','5830','46336','7658']
 
 for CSID in CSIDList:   
@@ -21,9 +21,7 @@ for CSID in CSIDList:
    
     try:
         print (CSID, MolecularWeight)
-        print (MolecularWeight)
-
-        
+        print (MolecularWeight)   
     except:
-        print 'ERROR - Too long string'
+        print 'ERROR'
 
